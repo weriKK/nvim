@@ -2,7 +2,7 @@
 dofile(vim.fn.stdpath('config') .. "/myplugins.lua")
 
 -- Theme
-vim.cmd.colorscheme("retrobox")
+vim.cmd.colorscheme("Tomorrow-Night")
 
 -- Basic settings
 vim.opt.number = true				                        -- Line numbers
