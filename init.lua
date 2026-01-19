@@ -1,5 +1,5 @@
 -- Setup plugins
-require('myplugins')
+dofile(vim.fn.stdpath('config') .. "/myplugins.lua")
 
 -- Theme
 vim.cmd.colorscheme("retrobox")
@@ -32,7 +32,7 @@ vim.opt.termguicolors = true                                -- 24-bit colors
 vim.opt.signcolumn = "auto"                                 -- Show sign column on the left only when there is something to show, also known as "gutter"
 --vim.opt.colorcolumn = "120"                               -- Show visual guide for line length
 vim.opt.showmatch = true                                    -- Highlight matching parentheses
-vim.opt.matchtime = 5                                       -- How long to show matching parentheses (1/10 seconds)
+vim.opt.matchtime = 3                                       -- How long to show matching parentheses (1/10 seconds)
 vim.opt.cmdheight = 1                                       -- Command line height (bottom bar)
 vim.opt.completeopt = "menuone,noinsert,noselect"           -- Insert mode completion options
 vim.opt.showmode = false                                    -- Hide mode in command line (we will use a statusline addon)
